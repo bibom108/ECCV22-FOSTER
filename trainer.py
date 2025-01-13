@@ -40,7 +40,7 @@ def _train(args):
 
     _set_random()
     _set_device(args)
-    print_args(args)
+    # print_args(args)
 
     data_manager = DataManager(args['dataset'], args['shuffle'], args['seed'], args['init_cls'], args['increment'])
 
@@ -48,8 +48,8 @@ def _train(args):
 
     cnn_curve, nme_curve = {'top1': [], 'top5': []}, {'top1': [], 'top5': []}
     for task in range(data_manager.nb_tasks):
-        logging.info('All params: {}'.format(count_parameters(model._network)))
-        logging.info('Trainable params: {}'.format(count_parameters(model._network, True)))
+        # logging.info('All params: {}'.format(count_parameters(model._network)))
+        # logging.info('Trainable params: {}'.format(count_parameters(model._network, True)))
         model.incremental_train(data_manager)
         cnn_accy, nme_accy = model.eval_task()
         model.after_task()
@@ -86,7 +86,8 @@ def _train(args):
 
             logging.info('NME top1 curve: {}'.format(nme_curve['top1']))
             logging.info('NME top5 curve: {}\n'.format(nme_curve['top5']))
-
+    model._cur_task += 1
+    model.save_checkpoint("weights/")
 
 
 

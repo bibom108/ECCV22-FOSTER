@@ -1,0 +1,11 @@
+idx	label	predict	correct	time
+Final result 1 [90, 100]: 187 , 104
+Final result 1 [80, 90]: 180 , 121
+Final result 1 [70, 80]: 86 , 66
+Final result 1 [60, 70]: 145 , 87
+Final result 1 [50, 60]: 83 , 89
+Final result 1 [40, 50]: 172 , 107
+Final result 1 [30, 40]: 150 , 62
+Final result 1 [20, 30]: 80 , 79
+Final result 1 [10, 20]: 49 , 43
+Final result 1 [0, 10]: 172 , 87

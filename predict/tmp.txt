@@ -1,0 +1,11 @@
+
+Final result 1 [90, 100]: 731 / 1000
+Final result 1 [80, 90]: 728 / 1000
+Final result 1 [70, 80]: 676 / 1000
+Final result 1 [60, 70]: 763 / 1000
+Final result 1 [50, 60]: 687 / 1000
+Final result 1 [40, 50]: 749 / 1000
+Final result 1 [30, 40]: 717 / 1000
+Final result 1 [20, 30]: 763 / 1000
+Final result 1 [10, 20]: 671 / 1000
+Final result 1 [0, 10]: 778 / 1000
